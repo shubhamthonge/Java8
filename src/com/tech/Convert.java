@@ -13,4 +13,25 @@ public class Convert {
 	System.out.println(s1 == s3); // Print the result of the comparison whether 's1' is equal to 's3'
 	
 }
+
+
+
+ 
+}
+
+class string_check {
+	
+	public static void main(String[] args) {
+		
+		
+		//scp ; only scp
+		 String s = "ram";
+		 
+		 //scp only one reference and heap separate copy each time;
+		 String s1  = new String("ram");
+		 
+		 System.out.println(s == s1);
+		 System.out.println(s .equals(s1));
+		
+	}  
 }
