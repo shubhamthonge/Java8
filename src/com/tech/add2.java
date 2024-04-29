@@ -30,13 +30,42 @@ public class add2 {
 		return result;
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static String name(String inp) {
+		String out="";
+		 
+		for(int i= 0; i< inp.length(); i++) {
+			out= inp.charAt(i)+out;
+			//System.out.println(out);
+		}
+		
+		return out;
+		
+	}
+	
+	
+	
+	
 	public static void main(String[] args) {
 
 		// fabS();
 
 //		System.out.println(strTrv("cba"));
 
-		SingleTo s = SingleTo.getInctance();
-		s.display();
+//		SingleTo s = SingleTo.getInctance();
+//		s.display();
+//		
+		System.out.println(name("karan"));
 	}
 }
