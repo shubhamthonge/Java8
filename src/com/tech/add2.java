@@ -54,6 +54,20 @@ public class add2 {
 		
 	}
 	
+	static int comp=11;
+	public static  void name1() {
+		int a=0;
+		int b=1;
+		int c;
+		 
+		for(int i=2;i<comp;i++) {
+			c=a+b;
+			System.out.print(" " +c);
+			a=b;
+			b=c;
+		}
+		
+	}
 	
 	
 	
@@ -66,6 +80,8 @@ public class add2 {
 //		SingleTo s = SingleTo.getInctance();
 //		s.display();
 //		
-		System.out.println(name("karan"));
+//		System.out.println(name("karan"));
+	
+		name1();
 	}
 }
