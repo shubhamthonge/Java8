@@ -30,8 +30,8 @@ public class reverse {
 	}
 	
 	public static void main(String[] args) {
-		//name();
-		System.out.println(name1("shubham"));
+		name();
+		//System.out.println(name1("shubham"));
 		
 	}
 	
