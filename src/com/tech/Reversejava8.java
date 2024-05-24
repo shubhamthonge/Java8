@@ -1,20 +1,35 @@
 package com.tech;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class Reversejava8 {
 
 	public static void main(String[] args) {
-		// Input string
 		String input = "i love india I LOVE INDIA";
 
-		// Reverse each word in the string
-		String result = Arrays.stream(input.split(" ")) // Split the input string into words
-				.map(word -> new StringBuilder(word).reverse().toString()) // Reverse each word
-				.collect(Collectors.joining(" ")); // Join the reversed words with a space
+		// Split the input string into words
+		List<String> words = Arrays.asList(input.split(" "));
+
+		// Reverse the order of the words
+		Collections.reverse(words);
+
+		// Change the case of each word
+		List<String> transformedWords = words.stream().map(Reversejava8::toggleCase).collect(Collectors.toList());
+
+		// Join the words back into a single string
+		String result = String.join(" ", transformedWords);
 
 		// Print the result
 		System.out.println(result);
+	}
+
+	// Helper method to toggle the case of a word
+	private static String toggleCase(String word) {
+		return word.chars().mapToObj(
+				c -> Character.isUpperCase(c) ? Character.toLowerCase((char) c) : Character.toUpperCase((char) c))
+				.map(String::valueOf).collect(Collectors.joining());
 	}
 }
