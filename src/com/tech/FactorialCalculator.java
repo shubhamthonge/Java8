@@ -19,7 +19,6 @@ public class FactorialCalculator {
 		scanner.close();
 	}
 
-	// Method to calculate factorial
 	public static long calculateFactorial(int n) {
 		long factorial = 1;
 		for (int i = 1; i <= n; i++) {
