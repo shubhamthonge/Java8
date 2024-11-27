@@ -7,7 +7,7 @@ import java.util.*;
 public class SetExample {
     public static void main(String[] args) {
         // Initializing a Set with some elements
-        Set<String> fruits = new HashSet<>(Arrays.asList("Apple", "Banana", "Orange"));
+        Set<String> fruits = new HashSet<String>();
 
         // Adding elements (duplicates are ignored)
         fruits.add("Mango");
